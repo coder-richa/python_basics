@@ -20,10 +20,12 @@ def calculate_gap(numbers: List[int]) -> Dict:
     
     # Loop over all elements to find the gap
     for i in range(len(numbers) - 1):
-        # When gap greater than 1, save the gap starting point and length of the gap
+        
+        # When gap greater than 1, save the gap starting point and length of the gap.
         if numbers[i + 1] - numbers[i]  > 1:
             length_of_gap = numbers[i + 1] - numbers[i] -1
             gap[numbers[i]] = length_of_gap        
+    
     return gap
 
 
@@ -52,13 +54,13 @@ def calculate_gap_union(*numbers: Tuple[List[int]]) -> Dict:
     :param numbers: List of numbers.
     :return: Dictionary with gap starting point and length of the gap.
     """
-    # Get sorted union of all lists
+    # Get sorted union of all lists.
     union_list = sort_list_union(*numbers)
     
     # Get Gap dictionary
     gap = calculate_gap(union_list)
     
-    # return the gap dictionary
+    # return the gap dictionary.
     return gap
 
 

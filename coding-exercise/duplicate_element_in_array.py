@@ -43,7 +43,7 @@ def get_duplicate_value_in_array(arr: List[int]) -> int:
     if len(arr) < 1:
         return -1
     
-    # Get unique values of array.
+    # Holds unique values of array.
     unique_elements = set()
     
     # Loop over all numbers in the range to find the duplicate number.
