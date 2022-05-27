@@ -33,15 +33,16 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 def maximum_subarray(nums: List[int]) -> int:
     # Get total number of elements in list.
     total_number_of_elements = len(nums)
+    
     # Check if list is empty.
     if total_number_of_elements < 1:
         return 0
     
-
     # Initialize variable to hold maximum sum of subarray.
     max_total_of_subarray = nums[0]
     new_total_of_subarray = 0
-    # start and end index specyfies the subarray.
+    
+    # start and end index specifies the subarray.
     # start_index = 0
     # end_index = 0
     
