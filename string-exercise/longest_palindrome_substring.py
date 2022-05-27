@@ -43,7 +43,7 @@ def get_longest_palindrome_substring(s: str) -> str:
         # Check if the current position and maximum palindrome length differ by odd number.
         if current_position - max_palindrome_length - 1 >= 0:
             
-            # Check substring from 1 element before max substring length to the current position.
+            # Check substring from 1 element before max substring length to the scurrent position.
             substring = s[current_position-max_palindrome_length-1:current_position+1]
             
             # if the substring is equal to its reverse, then update the maximum length substring.
